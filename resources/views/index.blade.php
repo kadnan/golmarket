@@ -76,7 +76,7 @@
                                     <figure>
                                         <div class="snipcart-item block" >
                                             <div class="snipcart-thumb">
-                                                <a href="single.html"><img width="150" height="150" title=" " alt=" " src="{!! $hot_product->image !!}" /></a>
+                                                <a href="{!! route('product.show',$hot_product->id) !!}"><img width="150" height="150" title=" " alt=" " src="{!! $hot_product->image !!}" /></a>
                                                 <p>{!! $hot_product->title !!}</p>
                                                 <h4>${!! $hot_product->discount_price !!} <span>${!! $hot_product->original_price !!}</span></h4>
                                             </div>
@@ -121,7 +121,7 @@
                                     <figure>
                                         <div class="snipcart-item block" >
                                             <div class="snipcart-thumb">
-                                                <a href="single.html"><img width="150" height="150" title=" " alt=" " src="{!! $top_product->image !!}" /></a>
+                                                <a href="{!! route('product.show',$hot_product->id) !!}"><img width="150" height="150" title=" " alt=" " src="{!! $top_product->image !!}" /></a>
                                                 <p>{!! $top_product->title !!}</p>
                                                 <h4>${!! $top_product->discount_price !!} <span>${!! $top_product->original_price !!}</span></h4>
                                             </div>
