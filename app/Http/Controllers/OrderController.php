@@ -60,7 +60,7 @@ class OrderController extends Controller {
 					] );
 				}
 				//Reset Cart after order submission
-				//Cart::where( 'user_id', $loggedInUserId )->delete();
+				Cart::where( $session_id )->delete();
 				DB::commit();
 
 			} catch ( Exception  $ex ) {
