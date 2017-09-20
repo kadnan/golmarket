@@ -64,7 +64,9 @@ class CartController extends Controller {
 		$session_id = session()->get( '_token' );
 		$entries       = Cart::where( 'session_id', $session_id )->get();
 
-		return view( 'cart/show' )->with( 'entries', $entries );
+		return view( 'cart/show' )
+			->with( 'entries', $entries )
+			->with( 'session_id', $session_id );
 	}
 
 }
